@@ -1,13 +1,6 @@
 {
   "canisters": {
-    "obsidian_tears_website_backend": {
-      "main": "src/obsidian_tears_website_backend/main.mo",
-      "type": "motoko"
-    },
     "obsidian_tears_website_frontend": {
-      "dependencies": [
-        "obsidian_tears_website_backend"
-      ],
       "frontend": {
         "entrypoint": "src/obsidian_tears_website_frontend/src/index.html"
       },
@@ -22,6 +15,12 @@
     "build": {
       "args": "",
       "packtool": ""
+    }
+  },
+  "networks": {
+    "staging": {
+      "providers": ["https://icp0.io"],
+      "type": "persistent"
     }
   },
   "output_env_file": ".env",

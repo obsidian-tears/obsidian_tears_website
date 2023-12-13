@@ -1,20 +1,17 @@
 {
   "name": "obsidian_tears_website_frontend",
   "version": "0.2.0",
-  "description": "Internet Computer starter application",
+  "description": "Obsidian Tears Website",
   "keywords": [
     "Internet Computer",
-    "Motoko",
     "JavaScript",
-    "Canister"
+    "Canister",
+    "Website",
+    "Obsidian Tears"
   ],
   "scripts": {
     "build": "webpack",
-    "prebuild": "dfx generate",
-    "start": "webpack serve --mode development --env development",
-    "deploy:local": "dfx deploy --network=local",
-    "deploy:ic": "dfx deploy --network=ic",
-    "generate": "dfx generate obsidian_tears_website_backend"
+    "start": "webpack serve --mode development --env development"
   },
   "dependencies": {
     "@dfinity/agent": "^0.20.2",
@@ -37,8 +34,8 @@
     "webpack-dev-server": "^4.8.1"
   },
   "engines": {
-    "node": "^12 || ^14 || ^16 || >=17",
-    "npm": "^7.17 || >=8"
+    "node": ">=17",
+    "npm": ">=8"
   },
   "browserslist": [
     "last 2 chrome version",
