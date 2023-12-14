@@ -1,0 +1,52 @@
+@import "./theme.scss";
+@import "./viewports.scss";
+
+html,
+body {
+  height: 100%;
+  // body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+  font-family: 'Press Start 2P', cursive;
+}
+
+body {
+  margin: 0;
+
+  /* Default styles for larger screens */
+  ::-webkit-scrollbar {
+    width: 50px;
+    height: 50px;
+
+    &-webkit-scrollbar-thumb {
+      background-color: #8c8c8c;
+      border: 1px solid #000;
+      border-radius: 4px;
+
+      &:hover {
+        background-color: #aaaaaa;
+      }
+
+      &:active {
+        background-color: #666666;
+      }
+    }
+
+    &-track {
+      background-color: #00000020;
+    }
+  }
+
+
+  /* Responsive styles for smaller screens (e.g., mobile devices) */
+  @media screen and (max-width: $lt-sm-md) {
+    ::-webkit-scrollbar {
+      width: 6px;
+      height: 6px;
+
+      &-thumb {
+        border-radius: 4px;
+      }
+    }
+
+  }
+
+}

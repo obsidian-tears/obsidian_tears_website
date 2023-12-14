@@ -1,0 +1,12 @@
+$lt-xs: 399px; //'screen (max-width: 399px);
+$lt-sm: 599px; //'screen (max-width: 599px);
+$lt-sm-md: 799px; //'screen (max-width: 799px); // exchange point
+$lt-md: 959px; //'screen (max-width: 959px);
+$lt-lg: 1279px; //'screen (max-width: 1279px);
+$lt-xl: 1919px; //'screen (max-width: 1919px);
+
+$gt-sm: 600px; //'screen (min-width: 600px);
+$lt-sm-md: 800px; //'screen (min-width: 800px);  // exchange point
+$gt-md: 960px; //'screen (min-width: 960px);
+$gt-lg: 1280px; //'screen (min-width: 1280px);
+$gt-xl: 1920px; //'screen (min-width: 1920px);

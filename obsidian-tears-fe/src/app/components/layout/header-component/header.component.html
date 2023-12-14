@@ -1,0 +1,20 @@
+<!-- basically I am gonna show always this mnat-toolbar if > 900px 
+    if less <700px I am gonna show the hamburguer btn, 
+    and if <700px I am gonna only show the hamburguer btn and when I toggle it will 
+come from the left side the sidenav, and it will hide the mat-toolbar (and to show it again I need to click on close
+button of sidenav or in the content part of the mat-sidenav-content and it will close the sidenav and show again the toolbar!) -->
+
+
+  <mat-toolbar>
+    <button mat-icon-button class="example-icon" (click)="inputSideNav?.toggle()">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <span>My App</span>
+    <span class="example-spacer"></span>
+    <button mat-icon-button class="example-icon favorite-icon">
+      <mat-icon>favorite</mat-icon>
+    </button>
+    <button mat-icon-button class="example-icon">
+      <mat-icon>share</mat-icon>
+    </button>
+  </mat-toolbar>
