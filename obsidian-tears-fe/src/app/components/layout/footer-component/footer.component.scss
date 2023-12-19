@@ -1,0 +1,8 @@
+@import "./../../../styles/colors.scss";
+@import "./../../../styles/dimensions.scss";
+
+.footer-container {
+    padding: 0 32px 1.5rem 32px;
+    height: $footer-height;
+    color: $primary-obsidian-light;
+}

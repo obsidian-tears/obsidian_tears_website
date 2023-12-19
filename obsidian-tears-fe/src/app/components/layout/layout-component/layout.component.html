@@ -1,18 +1,24 @@
 <mat-sidenav-container>
     <mat-sidenav #sidenav role="navigation">
-        <!-- <app-sidenav-list (closeSidenav)="sidenav.close()"></app-sidenav-list> -->
+        <div class="sidenav-container">
+            <app-nav-items-list (closeSidenavEvent)="sidenav.close()"></app-nav-items-list>
+        </div>
+
     </mat-sidenav>
 
     <mat-sidenav-content>
-        <header>
-            <app-header [inputSideNav]="sidenav"></app-header>
-        </header>
-        <main class="app-main-container">
-            <router-outlet></router-outlet>
-        </main>
-        <footer>
-            <app-footer></app-footer>
-        </footer>
+        <div class="bg-img-container">
+            <header>
+                <app-header [inputSideNav]="sidenav"></app-header>
+            </header>
+            <div class="app-container">
+                <main class="app-main-container">
+                    <router-outlet></router-outlet>
+                </main>
+                <footer>
+                    <app-footer></app-footer>
+                </footer>
+            </div>
+        </div>
     </mat-sidenav-content>
 </mat-sidenav-container>
-

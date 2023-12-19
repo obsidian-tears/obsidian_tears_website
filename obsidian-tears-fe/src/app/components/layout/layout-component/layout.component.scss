@@ -1,10 +1,52 @@
+@import "./../../../styles/colors.scss";
+@import "./../../../styles/dimensions.scss";
+
 mat-sidenav-container,
 mat-sidenav,
 mat-sidenav-content {
   height: 100%;
 }
 
-mat-sidenav {
-    width: 250px; //good for desktop view and mobile view
+mat-sidenav-content {
+  // overflow-y: hidden;
+
+  .bg-img-container {
+    background-image: url('/assets/img/tech-bg1.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
   }
-  
+
+  .app-container {
+    overflow-y: auto;
+    height: calc(100vh - ($toolbar-height));
+
+    display: flex;
+    flex-direction: column;
+    background: rgba(25, 25, 25, 0.7);
+  }
+
+  .app-main-container {
+    flex: 1;
+    padding: 1.5rem 32px;
+    color: $primary-obsidian-light;
+  }
+}
+
+.mat-sidenav-container {
+  .mat-sidenav {
+    background-image: url('/assets/img/tech-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: $sidenav-width;
+
+    .sidenav-container {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      background: rgba(25, 25, 25, 0.7);
+    }
+  }
+}

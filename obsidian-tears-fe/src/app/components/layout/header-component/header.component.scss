@@ -1,3 +1,117 @@
-.example-spacer {
-    flex: 1 1 auto;
+@import "./../../../styles/colors.scss";
+@import "./../../../styles/viewports.scss";
+
+mat-toolbar {
+  color: $primary-obsidian-light;
+  background: rgba(25, 25, 25, 0.7);
+  border-bottom: 1px solid #364852;
+
+  ul {
+    padding: 0;
+    list-style: none;
+    width: 100%;
+
+    li {
+      padding: 0 16px;
+    }
   }
+}
+
+.add-space-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.icon {
+  a {
+    display: block;
+    width: 24px;
+  }
+
+  img {
+    display: block;
+    margin: 0;
+    width: 24px;
+  }
+
+  &.logo {
+    img {
+      width: 55px;
+    }
+  }
+}
+
+.li-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  a {
+    text-decoration: none;
+  }
+
+  .toolbar-title {
+    display: flex;
+    flex-direction: column;
+    font-family: Material Symbols Outlined;
+    text-align: center;
+    line-height: normal;
+    color: rgba($primary-deep-crimson, .9);
+    font-size: 18px;
+
+    &:hover {
+      color: $primary-deep-crimson;
+    }
+
+    @media (min-width: $gt-md) {
+      flex-direction: row;
+      gap: 6px;
+    }
+
+    &.active-router-link {
+      border-top: $primary-deep-crimson 1px solid;
+      border-left: $primary-deep-crimson 2px solid;
+    }
+
+  }
+
+
+}
+
+.icon-menu-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 6px
+}
+
+.menu-btn {
+  color: $primary-obsidian-light;
+  margin-left: 20px;
+
+  &:hover {
+    background-color: rgba($primary-midnight-blue, 0.5);
+  }
+
+  @media (min-width: $gt-sm-md) {
+    display: none;
+  }
+}
+
+.navig-item {
+  &:hover {
+    color: whitesmoke;
+    cursor: pointer;
+    fill: whitesmoke;
+
+    img {
+      filter: grayscale(100%) brightness(120%);
+    }
+  }
+}
+
+.hide-item {
+  @media (max-width: $lt-sm-md) {
+    display: none;
+  }
+}

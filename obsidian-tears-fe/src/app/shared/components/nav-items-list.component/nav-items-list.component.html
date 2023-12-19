@@ -1,0 +1,44 @@
+<ul class="li-container">
+
+    <li class="icon-container is-sidenav">
+        <button mat-icon-button color="accent" class="close-btn navig-item" (click)="onCloseSidenav()">
+            <mat-icon>close</mat-icon>
+        </button>
+        <div class="icon logo">
+            <a routerLink="/welcome" routerLinkActive="active-logo-router-link" (mouseover)="showMovingLogo = true"
+                (mouseout)="showMovingLogo = false">
+                <img [ngClass]="showMovingLogo ? 'show-moving' : ''" id="toolbar-image" src="../../../../../assets/img/abstract-retro-game.png" />
+            </a>
+        </div>
+        <div class="logo-txt">
+            <a class="toolbar-title" routerLink="/welcome" routerLinkActive="active-logo-router-link"
+                (mouseover)="showMovingLogo = true"
+                (mouseout)="showMovingLogo = false"><span>OBSIDIAN</span><span>TEARS</span></a>
+        </div>
+    </li>
+
+    <a class="icon-container navig-item" routerLink="/game" routerLinkActive="active-router-link">
+        <mat-icon>videogame_asset</mat-icon>
+        <span>Play</span>
+    </a>
+    <a class="icon-container navig-item" routerLink="/governance" routerLinkActive="active-router-link">
+        <mat-icon>power_input</mat-icon>
+        <span>Governance</span>
+    </a>
+    <a class="icon-container navig-item" routerLink="/artifacts" routerLinkActive="active-router-link">
+        <mat-icon>track_changes</mat-icon>
+        <span>Artifacts</span>
+    </a>
+    <a class="icon-container navig-item" routerLink="/news" routerLinkActive="active-router-link">
+        <mat-icon>library_books</mat-icon>
+        <span>News</span>
+    </a>
+    <a class="icon icon-container navig-item margin-applied">
+        <img id="toolbar-image" src="../../../../../assets/img/discord-obsidian-logo.svg" />
+        <span>Discord</span>
+    </a>
+    <a class="icon icon-container navig-item">
+        <img id="toolbar-image" src="../../../../../assets/img/twitter-new-brand-icon-obsidian-logo.svg" />
+        <span>Twitter</span>
+    </a>
+</ul>
