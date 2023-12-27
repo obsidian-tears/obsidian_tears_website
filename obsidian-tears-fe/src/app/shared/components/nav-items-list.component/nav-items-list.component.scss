@@ -38,7 +38,7 @@
     align-items: center;
 
     .logo {
-      width: calc(100% - 2px);
+      width: calc(100% - 3px);
       align-items: center;
       display: flex;
       justify-content: center;
@@ -67,12 +67,12 @@
       font-family: Material Symbols Outlined;
       text-align: center;
       line-height: normal;
-      color: lighten($primary-deep-crimson, 5%);
+      color: lighten($primary-deep-crimson, 14%);
       font-size: 18px;
       padding-top: 0;
 
       &:hover {
-        color: lighten($primary-deep-crimson, 15%);
+        color: lighten($primary-deep-crimson, 20%);
       }
     }
 
@@ -120,7 +120,7 @@ ul {
       padding: 0 6px;
     }
     @media (max-width: $lt-sm-md) {
-      padding: 16px 0;
+      padding: 12px 0;
     }
   }
 }
@@ -146,6 +146,10 @@ ul {
 .margin-applied {
   @media (max-width: $lt-sm-md) {
     margin-top: 70px;
+
+    @media(max-height: $lt-sm-md-vh) {
+      margin-top: 0;
+    }
   }
 
   @media (min-width: $gt-sm-md) {
@@ -155,25 +159,31 @@ ul {
 
 
 .active-router-link {
-  border-top: $primary-deep-crimson 1px solid;
+  border-top: $primary-deep-crimson 2px solid;
 
   @media (min-width: $gt-sm-md) {
-    border-left: $primary-deep-crimson 1px solid;
+    border-left: $primary-deep-crimson 2px solid;
   }
 
   @media (max-width: $lt-sm-md) {
-    width: calc(100% - 2px);
-    border-left: $primary-deep-crimson 2px solid;
+    width: calc(100% - 3px);
+    border-left: $primary-deep-crimson 3px solid;
   }
 }
 
 .active-logo-router-link {
-  border-left: $primary-deep-crimson 2px solid;
+  border-left: $primary-deep-crimson 3px solid;
 }
 
 .close-btn {
   &:hover {
     background-color: rgba($primary-deep-crimson, 0.3);
+  }
+}
+
+.support-icon {
+  @media (max-width: $lt-sm-md) {
+    display: none;
   }
 }
 

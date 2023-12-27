@@ -8,6 +8,7 @@ body {
   // body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   // font-family: 'Press Start 2P', cursive;
   font-family: 'Pixel Font', sans-serif;
+  font-weight: 700;
 }
 
 body {
@@ -27,10 +28,12 @@ body {
 
       &:hover {
         background-color: darken(rgba(0, 150, 136, 0.44), 1%);
+        cursor: grab !important;
       }
 
       &:active {
         background-color: darken(rgba(0, 150, 136, 0.64), 10%);
+        cursor: grabbing !important;
       }
     }
 

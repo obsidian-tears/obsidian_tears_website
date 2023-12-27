@@ -1,5 +1,6 @@
 @import "./../../../styles/colors.scss";
 @import "./../../../styles/dimensions.scss";
+@import "./../../../styles/viewports.scss";
 
 mat-sidenav-container,
 mat-sidenav,
@@ -22,6 +23,10 @@ mat-sidenav-content {
     overflow-y: auto;
     height: calc(100vh - ($toolbar-height));
 
+    @media (max-width: $lt-sm) {
+      height: calc(100vh - ($toolbar-height-lt-sm));
+    }
+
     display: flex;
     flex-direction: column;
     background: rgba(25, 25, 25, 0.7);
@@ -31,6 +36,10 @@ mat-sidenav-content {
     flex: 1;
     padding: 1.5rem 32px;
     color: $primary-obsidian-light;
+
+    @media (max-width: $lt-sm) {
+      padding: 1.5rem 16px;
+    }
   }
 }
 
@@ -49,4 +58,8 @@ mat-sidenav-content {
       background: rgba(25, 25, 25, 0.7);
     }
   }
+}
+
+.mat-drawer-content {
+  display: unset;
 }

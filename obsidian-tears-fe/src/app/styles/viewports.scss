@@ -1,3 +1,4 @@
+// Viewport Width (VW)
 $lt-xs: 399px; //'screen (max-width: 399px);
 $lt-sm: 599px; //'screen (max-width: 599px);
 $lt-sm-md: 859px; //'screen (max-width: 859px); // exchange point
@@ -9,6 +10,10 @@ $lt-xl: 1919px; //'screen (max-width: 1919px);
 $gt-sm: 600px; //'screen (min-width: 600px);
 $gt-sm-md: 860px; //'screen (min-width: 860px);  // exchange point
 $gt-md: 960px; //'screen (min-width: 960px);
-$lt-md1: 1060px; //'screen (max-width: 1060px);
+$lt-md1: 1060px; //'screen (min-width: 1060px);
 $gt-lg: 1280px; //'screen (min-width: 1280px);
 $gt-xl: 1920px; //'screen (min-width: 1920px);
+
+
+// Viewport Height (VH)
+$lt-sm-md-vh: 829px;
