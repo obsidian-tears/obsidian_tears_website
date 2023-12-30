@@ -7,7 +7,8 @@
         <div class="icon logo">
             <a routerLink="/welcome" routerLinkActive="active-logo-router-link" (mouseover)="showMovingLogo = true"
                 (mouseout)="showMovingLogo = false">
-                <img [ngClass]="showMovingLogo ? 'show-moving' : ''" id="toolbar-image" src="../../../../../assets/img/abstract-retro-game.png" />
+                <img [ngClass]="showMovingLogo ? 'show-moving' : ''" id="toolbar-image"
+                    src="../../../../../assets/img/abstract-retro-game.png" />
             </a>
         </div>
         <div class="logo-txt">
@@ -33,11 +34,18 @@
         <mat-icon>library_books</mat-icon>
         <span>News</span>
     </a>
-    <a class="icon icon-container navig-item margin-applied support-icon">
+    <a class="icon-container navig-item" routerLink="/how-to" routerLinkActive="active-router-link">
+        <mat-icon>token</mat-icon>
+        <span>NFTs</span>
+    </a>
+    <!-- TODO: Update twitter href to DISCORD href -->
+    <a href="https://twitter.com/obsidian__tears" target="_blank" rel="noopener"
+        class="icon icon-container navig-item margin-applied support-icon">
         <img id="toolbar-image" src="../../../../../assets/img/discord-obsidian-logo.svg" />
         <span>Discord</span>
     </a>
-    <a class="icon icon-container navig-item support-icon">
+    <a href="https://twitter.com/obsidian__tears" target="_blank" rel="noopener"
+        class="icon icon-container navig-item support-icon">
         <img id="toolbar-image" src="../../../../../assets/img/twitter-new-brand-icon-obsidian-logo.svg" />
         <span>Twitter</span>
     </a>

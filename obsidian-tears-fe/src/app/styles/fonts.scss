@@ -1,0 +1,74 @@
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// font for the FOOTER (top part)
+@font-face {
+  font-family: 'minecraft-font';
+  src: local('minecraft'), url('./../../assets/fonts/minecraft.ttf') format('truetype');
+}
+// // font for the FOOTER (bottom part)
+@font-face {
+  font-family: 'edunline-font';
+  src: local('edunline-prompt'), url('./../../assets/fonts/edunline.ttf') format('truetype');
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// font is for the APP (global font)
+@font-face {
+  font-family: 'windows-regular-font';
+  src: local('windows-regular'), url('./../../assets/fonts/windows-regular.ttf') format('truetype');
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// font is for the HEADER (app global header)
+@font-face {
+  font-family: 'minecraftia-regular-font';
+  src: local('minecraftia-regular'), url('./../../assets/fonts/minecraftia-regular.ttf') format('truetype');
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// font for HEADER BUTTONS and SIDENAV BUTTONS ||  OR  || Pixelify Sans (google font)||
+@font-face {
+  font-family: 'pixeled-font';
+  src: local('pixeled'), url('./../../assets/fonts/pixeled.ttf') format('truetype');
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// font for the TOOLBAR TITLE (LOGO TXT - Oblivian Tears)
+@font-face {
+  font-family: 'retro-computer-font';
+  src: local('retro-computer'), url('./../../assets/fonts/retro-computer.ttf') format('truetype');
+}
+
+
+///////////////////////
+//////////////////////
+// UNUSED FONTS for now..
+
+@font-face {
+  font-family: 'crang-font';
+  src: local('crang'), url('./../../assets/fonts/crang.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'melted-monster-font';
+  src: local('melted-monster'), url('./../../assets/fonts/melted-monster.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'retro-gaming-font';
+  src: local('retro-gaming'), url('./../../assets/fonts/retro-gaming.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'fipps-regular-font';
+  src: local('fipps-regular'), url('./../../assets/fonts/fipps-regular.otf') format('truetype');
+}
+
+@font-face {
+  font-family: 'upheavtt-font';
+  src: local('upheavtt'), url('./../../assets/fonts/upheavtt.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'super-mario-bros-font';
+  src: local('super-mario-bros'), url('./../../assets/fonts/super-mario-bros.ttf') format('truetype');
+}

@@ -2,11 +2,14 @@
 @import "./../../../styles/viewports.scss";
 
 mat-toolbar {
+  // font-size: .8rem;
   color: $primary-obsidian-light;
   background: rgba(25, 25, 25, 0.7);
   border-bottom: 1px solid #364852;
 
   ul {
+    font-family: 'pixeled-font', sans-serif; // font for the buttons on the header
+
     padding: 0;
     list-style: none;
     width: 100%;
@@ -53,7 +56,9 @@ mat-toolbar {
   .toolbar-title {
     display: flex;
     flex-direction: column;
-    font-family: Material Symbols Outlined;
+    // font-family: Material Symbols Outlined;
+    font-family: 'retro-computer-font', sans-serif; // font for the logo header txt
+
     text-align: center;
     line-height: normal;
     color: lighten($primary-deep-crimson, 8%);
@@ -70,6 +75,7 @@ mat-toolbar {
     @media (min-width: $gt-lg) {
       flex-direction: row;
       gap: .75rem; //12px
+      font-size: 1.5rem;
     }
 
     &.active-router-link {

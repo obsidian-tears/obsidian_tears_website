@@ -1,13 +1,14 @@
 @import "./theme.scss";
 @import "./viewports.scss";
 @import "./colors.scss";
+@import "./fonts.scss";
 
 html,
 body {
   height: 100%;
   // body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   // font-family: 'Press Start 2P', cursive;
-  font-family: 'Pixel Font', sans-serif;
+  font-family: 'windows-regular-font', sans-serif; 
   font-weight: 700;
 }
 

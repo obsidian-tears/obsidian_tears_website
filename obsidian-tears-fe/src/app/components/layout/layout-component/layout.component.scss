@@ -36,6 +36,7 @@ mat-sidenav-content {
     flex: 1;
     padding: 1.5rem 32px;
     color: $primary-obsidian-light;
+    font-size: 1.125rem;
 
     @media (max-width: $lt-sm) {
       padding: 1.5rem 16px;

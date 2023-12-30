@@ -1,0 +1,53 @@
+@import './../../../../styles/viewports.scss';
+@import './../../../../styles/colors.scss';
+@import './../../../../styles/global-styles.scss';
+@import './../../../../styles/dimensions.scss';
+
+.app-global-header {
+    @extend .app-global-header;
+
+    mat-icon {
+        vertical-align: sub;
+        font-size: 30px;
+        width: 30px;
+        height: 30px;
+
+        @media (max-width: $lt-sm-md) {
+            font-size: 24px;
+            width: 24px;
+            height: 24px;
+        }
+    }
+}
+
+.game-container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1500px;
+    flex-direction: column;
+    background-color: rgba(15, 41, 51, 0.5);
+    box-shadow: 0 0 0 1px $primary-deep-crimson;
+
+    p {
+        font-size: 16px;
+        text-align: center;
+        padding: 1rem;
+
+        @media (max-width: $lt-lg) {
+            font-size: 14px;
+        }
+        @media (max-width: $lt-md1) {
+            font-size: 13px;
+        }
+        @media (max-width: $lt-md) {
+            font-size: 12px;
+        }
+        @media (max-width: $lt-sm-md) {
+            font-size: 11px;
+        }
+    }
+}
+
