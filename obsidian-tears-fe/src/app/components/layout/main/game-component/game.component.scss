@@ -28,26 +28,30 @@
     width: 100%;
     max-width: 1500px;
     flex-direction: column;
-    background-color: rgba(15, 41, 51, 0.5);
+    // background-color: rgba(15, 41, 51, 0.5); - cool green
+    // background-color: rgba(90, 130, 95, 0.7); // - muted green
+    background-color: $primary-blue-muted-mid-low-opa-color; // - muted blue
     box-shadow: 0 0 0 1px $primary-deep-crimson;
 
     p {
         font-size: 16px;
         text-align: center;
-        padding: 1rem;
+        padding: 0 .2rem;
 
         @media (max-width: $lt-lg) {
             font-size: 14px;
         }
+
         @media (max-width: $lt-md1) {
             font-size: 13px;
         }
+
         @media (max-width: $lt-md) {
             font-size: 12px;
         }
+
         @media (max-width: $lt-sm-md) {
             font-size: 11px;
         }
     }
 }
-

@@ -8,7 +8,8 @@ body {
   height: 100%;
   // body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   // font-family: 'Press Start 2P', cursive;
-  font-family: 'windows-regular-font', sans-serif; 
+  // font-family: 'windows-regular-font', sans-serif; 
+  font-family: 'retro-gaming-font', cursive;
   font-weight: 700;
 }
 
@@ -20,21 +21,21 @@ body {
     height: 4.4px;
 
     &-track {
-      background-color: #00000020;
+      background-color: $primary-brown-dark-low-opa-color; // same as header bg-color / same as footer bg-color
     }
 
     &-thumb {
-      background-color: lighten(rgba(0, 150, 136, 0.15), 10%);;
+      background-color: $brown-scrollbar-thumb-color;
       border-radius: 20px;
 
       &:hover {
-        background-color: darken(rgba(0, 150, 136, 0.44), 1%);
+        background-color: $brown-scrollbar-thumb-hover;
         cursor: grab !important;
       }
 
       &:active {
-        background-color: darken(rgba(0, 150, 136, 0.64), 10%);
-        cursor: grabbing !important;
+        background-color: $brown-scrollbar-thumb-active;
+        cursor: grabbing;
       }
     }
 

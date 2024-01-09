@@ -13,15 +13,8 @@
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // font is for the APP (global font)
 @font-face {
-  font-family: 'windows-regular-font';
-  src: local('windows-regular'), url('./../../assets/fonts/windows-regular.ttf') format('truetype');
-}
-
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-// font is for the HEADER (app global header)
-@font-face {
-  font-family: 'minecraftia-regular-font';
-  src: local('minecraftia-regular'), url('./../../assets/fonts/minecraftia-regular.ttf') format('truetype');
+  font-family: 'retro-gaming-font';
+  src: local('retro-gaming'), url('./../../assets/fonts/retro-gaming.ttf') format('truetype');
 }
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -43,6 +36,20 @@
 //////////////////////
 // UNUSED FONTS for now..
 
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// font is for the APP (global font) //  - was used as
+@font-face {
+  font-family: 'windows-regular-font';
+  src: local('windows-regular'), url('./../../assets/fonts/windows-regular.ttf') format('truetype');
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// font is for the HEADER (app global header) // - was used as
+@font-face {
+  font-family: 'minecraftia-regular-font';
+  src: local('minecraftia-regular'), url('./../../assets/fonts/minecraftia-regular.ttf') format('truetype');
+}
+
 @font-face {
   font-family: 'crang-font';
   src: local('crang'), url('./../../assets/fonts/crang.ttf') format('truetype');
@@ -51,11 +58,6 @@
 @font-face {
   font-family: 'melted-monster-font';
   src: local('melted-monster'), url('./../../assets/fonts/melted-monster.ttf') format('truetype');
-}
-
-@font-face {
-  font-family: 'retro-gaming-font';
-  src: local('retro-gaming'), url('./../../assets/fonts/retro-gaming.ttf') format('truetype');
 }
 
 @font-face {

@@ -8,6 +8,9 @@
 // Be sure that you only ever include this mixin once!
 @include mat.core();
 
+
+// TODO: need to update the 2 palettes (not being used for now)
+// need to update the palettes to the current style
 $obsidian-primary-palette: (
   50 : #e9ebec,
   100 : #c7ced1,
@@ -76,17 +79,17 @@ $obsidian-accent-palette: (
 // Define the palettes for your theme using the Material Design palettes available in palette.scss
 // (imported above). For each palette, you can optionally specify a default, lighter, and darker
 // hue. Available color palettes: https://material.io/design/color/
-$obsidian-tears-fe-primary: mat.define-palette($obsidian-primary-palette);
-$obsidian-tears-fe-accent: mat.define-palette($obsidian-accent-palette);
+$obsidian-tears-fe-primary-defined-palette: mat.define-palette($obsidian-primary-palette);
+$obsidian-tears-fe-accent-defined-palette: mat.define-palette($obsidian-accent-palette);
 
 // The warn palette is optional (defaults to red).
-$obsidian-tears-fe-warn: mat.define-palette(mat.$red-palette);
+$obsidian-tears-fe-warn-defined-palette: mat.define-palette(mat.$red-palette);
 
 // Create the theme object. A theme consists of configurations for individual
 // theming systems such as "color" or "typography".
-$obsidian-tears-fe-theme: mat.define-light-theme((color: (primary: $obsidian-tears-fe-primary,
-        accent: $obsidian-tears-fe-accent,
-        warn: $obsidian-tears-fe-warn,
+$obsidian-tears-fe-theme: mat.define-light-theme((color: (primary: $obsidian-tears-fe-primary-defined-palette,
+        accent: $obsidian-tears-fe-accent-defined-palette,
+        warn: $obsidian-tears-fe-warn-defined-palette,
       )));
 
 // Include theme styles for core and each component used in your app.

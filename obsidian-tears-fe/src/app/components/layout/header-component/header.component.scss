@@ -1,11 +1,12 @@
 @import "./../../../styles/colors.scss";
 @import "./../../../styles/viewports.scss";
 
+.mat-toolbar {
+  background: $primary-brown-dark-low-opa-color;
+}
+
 mat-toolbar {
-  // font-size: .8rem;
-  color: $primary-obsidian-light;
-  background: rgba(25, 25, 25, 0.7);
-  border-bottom: 1px solid #364852;
+  border-bottom: 4px solid $primary-brown-orange-color;
 
   ul {
     font-family: 'pixeled-font', sans-serif; // font for the buttons on the header
@@ -61,11 +62,11 @@ mat-toolbar {
 
     text-align: center;
     line-height: normal;
-    color: lighten($primary-deep-crimson, 8%);
+    color: $primary-brown-light-color;
     font-size: 1.125rem; //18px
 
     &:hover {
-      color: lighten($primary-deep-crimson, 15%);
+      color: $primary-brown-lighter-color;
     }
 
     @media (min-width: $gt-md) {
@@ -85,7 +86,6 @@ mat-toolbar {
 
   }
 
-
 }
 
 .icon-menu-container {
@@ -96,11 +96,11 @@ mat-toolbar {
 }
 
 .menu-btn {
-  color: $primary-obsidian-light;
+  color: whitesmoke;
   margin-left: 1.25rem; //20px
 
   &:hover {
-    background-color: rgba($primary-midnight-blue, 0.5);
+    background-color: rgba($primary-deep-crimson, 0.3);
   }
 
   @media (min-width: $gt-sm-md) {
@@ -110,13 +110,8 @@ mat-toolbar {
 
 .navig-item {
   &:hover {
-    color: whitesmoke;
+    color: $primary-blue-grey-color;
     cursor: pointer;
-    fill: whitesmoke;
-
-    img {
-      filter: grayscale(100%) brightness(120%);
-    }
   }
 }
 

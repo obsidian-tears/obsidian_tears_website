@@ -1,9 +1,42 @@
 $primary-deep-crimson: rgb(89, 0, 22);
-$primary-midnight-blue: rgba(25, 25, 112, 1);
-$primary-gold-rush: rgba(184, 134, 11, 1);
+// $primary-midnight-blue: rgba(25, 25, 112, 1);
+// $primary-gold-rush: rgba(184, 134, 11, 1);
+// $primary-obsidian: #455a64;
 
-$semi-transparent-primary-deep-crimson: rgba($primary-deep-crimson, .5);
+///////////
+//Blue
+$primary-blue-mid-low-opa-color: rgba(81, 109, 157, 0.75);
 
-$primary-obsidian: #455a64;
-$primary-obsidian-light: #a2b9c3;
+$primary-blue-light-color: #a2b9c3;
+$primary-blue-lighter-color: rgb(187, 205, 212);
 
+$primary-blue-grey-color: rgb(162, 185, 195);
+
+$primary-blue-muted-color: rgb(100, 120, 150);
+$primary-blue-muted-mid-low-opa-color: rgba(100, 120, 150, 0.7);
+
+///////////
+//Yellow
+$primary-yellow-color: rgb(232, 206, 3);
+
+///////////
+//Brown
+$primary-brown-color: rgb(88, 52, 40);
+
+$primary-brown-light-color: rgb(126, 78, 61);
+$primary-brown-light-mid-opa-color: rgb(126, 78, 61, .3);
+$primary-brown-lighter-color: rgb(05, 65, 51);
+
+$primary-brown-dark-color: rgb(40 28 30);
+$primary-brown-dark-low-opa-color: rgba(40, 28, 30, .9);
+
+$primary-brown-orange-color: rgb(139, 69, 19);
+
+$primary-brown-red-color: rgb(116 73 60);
+$primary-brown-red-light-color: rgb(147 95 87);
+
+///////////
+// Scrollbar
+$brown-scrollbar-thumb-color: rgb(101, 67, 33); // A dark brown
+$brown-scrollbar-thumb-hover: rgb(115, 66, 36); // A slightly lighter brown
+$brown-scrollbar-thumb-active: rgb(95, 58, 39); // A darker brown
