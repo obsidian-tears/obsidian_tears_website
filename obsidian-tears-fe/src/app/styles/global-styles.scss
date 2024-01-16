@@ -22,13 +22,15 @@
     @media (max-width: $lt-lg1) {
         font-size: 19px;
     }
-
     @media (max-width: $lt-sm-md) {
         font-size: 13px;
     }
-
     @media (max-width: $lt-sm) {
         font-size: 11px;
+    }
+
+    @media(max-height: $lt-sm-md-vh) {
+        padding: 0 1rem;
     }
 }
 
@@ -51,6 +53,10 @@
     }
     @media (max-width: $lt-sm) {
         font-size: 9px;
+    }
+
+    @media(max-height: $lt-sm-md-vh) {
+        padding: 0.5rem 1rem 0 1rem;
     }
 }
 

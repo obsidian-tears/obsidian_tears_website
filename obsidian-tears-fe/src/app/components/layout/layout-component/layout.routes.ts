@@ -1,5 +1,5 @@
 import { Routes } from "@angular/router";
-import { PageNotFoundComponent } from "../../../shared/components/page-not-found-component/page-not-found.component";
+import { PageNotFoundComponent } from "../../../shared/components/page-not-found.component/page-not-found.component";
 import { WelcomeComponent } from "../main/welcome-component/welcome.component";
 import { LayoutComponent } from "./layout.component";
 

@@ -1,0 +1,37 @@
+@import './../../../../styles/viewports.scss';
+@import './../../../../styles/colors.scss';
+@import './../../../../styles/global-styles.scss';
+@import './../../../../styles/dimensions.scss';
+
+.app-global-header {
+    @extend .app-global-header;
+
+    mat-icon {
+        vertical-align: sub;
+        font-size: 30px;
+        width: 30px;
+        height: 30px;
+
+        @media (max-width: $lt-sm-md) {
+            font-size: 24px;
+            width: 24px;
+            height: 24px;
+        }
+    }
+}
+
+.artifacts-container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1500px;
+    flex-direction: column;
+    background-color: $primary-blue-muted-mid-low-opa-color; // - muted blue
+    box-shadow: 0 0 0 1px $primary-brown-color;
+
+    app-thumbs-gallery-swiper {
+        width: 100%;
+    }
+}

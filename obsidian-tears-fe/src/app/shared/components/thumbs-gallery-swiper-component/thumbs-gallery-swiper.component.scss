@@ -1,0 +1,124 @@
+@import './../../../styles/viewports.scss';
+@import './../../../styles/colors.scss';
+
+@import '../../../styles/global-swiper.scss';
+@import "../../../../../node_modules/swiper/swiper-bundle.css";
+@import "../../../../../node_modules/swiper/swiper.scss";
+
+.swiper-container {
+  @extend .swiper-container;
+
+  height: 660px;
+  margin-bottom: 0;
+
+  @media screen and (max-width: $lt-md1) {
+    height: 600px;
+  }
+  @media screen and (max-width: $lt-md) {
+    height: 500px;
+  }
+  @media screen and (max-width: $lt-sm1) {
+    height: 400px;
+  }
+  @media screen and (max-width: $lt-sm) {
+    height: 300px;
+  }
+}
+
+///////////
+/// BIG GALLERY SWIPER
+.bigGallerySwiper {
+    padding-top: 1rem;
+    width: 100%;
+    width: 850px;
+
+    &:hover {
+      cursor: grab;
+    }
+
+    @media screen and (max-width: $lt-md1) {
+      height: 70%;
+      width: 700px;
+    }
+    @media screen and (max-width: $lt-md) {
+      height: 65%;
+      width: 550px;
+    }
+    @media screen and (max-width: $lt-sm1) {
+      height: 65%;
+      width: 450px;
+    }
+    @media screen and (max-width: $lt-sm) {
+      height: 65%;
+      width: 315px;
+    }
+
+    .swiper-slide {
+      background-size: cover;
+      background-position: center;
+
+      @media screen and (max-width: $lt-md1) {
+        img {
+          // object-fit: fill;
+          height: auto;
+          max-width: 100%;
+        }
+      }
+    }
+
+    .swiper-button {
+      &-prev {
+        color: $primary-brown-light-color;
+
+        &:hover {
+          color: $primary-brown-light-orange-color;
+        }
+      }
+      &-next {
+        color: $primary-brown-light-color;
+
+        &:hover {
+          color: $primary-brown-light-orange-color;
+        }
+      }
+    }
+  }
+  
+
+///////////
+/// SMALL GALLERY SWIPER
+  .smallGallerySwiper {
+    box-sizing: border-box;
+    padding: 1rem 0 0 0;
+    width: 100%;
+    width: 950px;
+
+    &:hover {
+      cursor: grab;
+    }
+  
+    @media screen and (max-width: $lt-md1) {
+      width: 800px;
+    }
+    @media screen and (max-width: $lt-md) {
+      width: 600px;
+    }
+    @media screen and (max-width: $lt-sm1) {
+      width: 460px;
+    }
+    @media screen and (max-width: $lt-sm) {
+      width: 315px;
+    }
+
+    .swiper-slide {
+      background-size: cover;
+      background-position: center;
+      width: 25%;
+      height: 100%;
+      opacity: 0.5;
+    }
+
+    .swiper-slide-thumb-active {
+      opacity: 1;
+    }
+  }

@@ -1,1 +1,9 @@
-<p>artifacts works!</p>
+<div class="app-global-container">
+    <p class="app-global-header">Artifact Almanac</p>
+    <div class="artifacts-container">
+        <mat-label class="app-global-sub-header">Epic Adventures Await - A Preview of Game Artifacts</mat-label>
+        <app-thumbs-gallery-swiper *ngIf="artifactImages.length"
+            [swiperImages]="artifactImages"></app-thumbs-gallery-swiper>
+        <app-no-results-found *ngIf="!artifactImages.length"></app-no-results-found>
+    </div>
+</div>

@@ -1,0 +1,15 @@
+<div *ngIf="swiperImages" class="swiper-container">
+
+    <swiper [grabCursor]="true" [initialSlide]="2" [centeredSlides]="true" [slidesPerView]="'auto'" [pagination]="true"
+        class="cube-swiper" [effect]="'cube'" [cubeEffect]="{
+              shadow: true,
+              slideShadows: true,
+              shadowOffset: 20,
+              shadowScale: 0.74
+            }" [keyboard]="{enabled: true}">
+        <ng-template *ngFor="let swiperImage of swiperImages" swiperSlide>
+            <img src="{{swiperImage}}" />
+        </ng-template>
+    </swiper>
+
+</div>

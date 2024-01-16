@@ -3,10 +3,10 @@
     <div class="add-space-container">
       <div class="li-container">
         <li class="icon-menu-container">
-          <div class="icon logo" [@logoAnimation]="isMovingStar()">
+          <div class="icon logo" [@logoAnimation]="isRotating()">
             <a routerLink="/welcome" routerLinkActive="active-router-link" (mouseover)="showMovingLogo = true"
               (mouseout)="showMovingLogo = false"><img id="toolbar-image"
-                src="../../../../../assets/img/abstract-retro-game.png" />
+                src="../../../../../assets/img/abstract-retro-game.svg" />
             </a>
           </div>
           <button mat-icon-button color="primary" class="menu-btn navig-item" (click)="inputSideNav?.toggle()" >

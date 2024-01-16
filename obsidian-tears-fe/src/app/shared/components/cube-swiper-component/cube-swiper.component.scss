@@ -1,0 +1,22 @@
+@import './../../../styles/viewports.scss';
+@import './../../../styles/colors.scss';
+
+@import '../../../styles/global-swiper.scss';
+@import "../../../../../node_modules/swiper/swiper-bundle.css";
+@import "../../../../../node_modules/swiper/swiper.scss";
+
+.cube-swiper {
+    width: 450px;
+    height: 450px;
+    padding-top: 25px;
+    padding-bottom: 50px;
+
+    @media screen and (max-width: $lt-sm) {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+.swiper-pagination-bullet-active {
+    background-color: $primary-brown-light-color;
+}

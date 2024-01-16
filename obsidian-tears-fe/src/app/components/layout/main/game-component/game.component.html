@@ -1,17 +1,14 @@
 <div class="app-global-container">
+  <p class="app-global-header">OBSIDIAN TEARS GAME is Currently Under Development <mat-icon>construction</mat-icon>
+  </p>
+  <div class="game-container">
+    <mat-label class="app-global-sub-header">Epic Adventures Await - A Preview of Upcoming Retro Game </mat-label>
 
-    <p class="app-global-header">OBSIDIAN TEARS GAME is Currently Under Development <mat-icon>construction</mat-icon>
-    </p>
+    <app-cube-swiper *ngIf="gameImages.length" [swiperImages]="gameImages"></app-cube-swiper>
+    <app-no-results-found *ngIf="!gameImages.length"></app-no-results-found>
 
-    <div class="game-container">
-        <mat-label class="app-global-sub-header">Epic Adventures Await - A Preview of Upcoming Retro Game </mat-label>
-
-        <p>this will be the swiper</p>
-
-        <p>OBSIDIAN TEARS Is Currently Under Development And Falls Under The ‘2D RPG’ Genre. It’s Gameplay Will Be
-            Similar To Zelda: A Link To The Past And Final Fantasy 2. Unlike Zelda And Final Fantasy</p>
-        <p>However, It Will Feature The Playable Character, Artifacts, Weapons, Armor, Etc.. All As NFTs.</p>
-
-    </div>
-
+    <p>OBSIDIAN TEARS Is Currently Under Development And Falls Under The ‘2D RPG’ Genre. It’s Gameplay Will Be
+      Similar To Zelda: A Link To The Past And Final Fantasy 2. Unlike Zelda And Final Fantasy</p>
+    <p>However, It Will Feature The Playable Character, Artifacts, Weapons, Armor, Etc.. All As NFTs.</p>
+  </div>
 </div>

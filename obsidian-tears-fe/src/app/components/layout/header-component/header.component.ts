@@ -36,7 +36,7 @@ export class HeaderComponent {
 
   constructor() { }
 
-  isMovingStar(): string {
+  isRotating(): string {
     return this.showMovingLogo ? 'show' : 'hide';
   }
 
