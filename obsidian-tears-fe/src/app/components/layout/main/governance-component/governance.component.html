@@ -1,1 +1,9 @@
-<p>governance works!</p>
+<div class="app-global-container">
+    <p class="app-global-header">Governance</p>
+    <div class="artifacts-container">
+        <mat-label class="app-global-sub-header">Epic Adventures Await</mat-label>
+        <app-parallax-gallery-swiper *ngIf="governances.length"
+            [swiperObjects]="governances"></app-parallax-gallery-swiper>
+        <app-no-results-found *ngIf="!governances.length"></app-no-results-found>
+    </div>
+</div>

@@ -1,0 +1,23 @@
+<div *ngIf="swiperObjects.length" class="swiper-container">
+
+    <swiper [loop]="true" [spaceBetween]="10" [keyboard]="{enabled: true}" [navigation]="true"
+        [thumbs]="{swiper: thumbsSwiper}" [zoom]="true" class="parallax-swiper">
+        <ng-template *ngFor="let swiperObj of swiperObjects" swiperSlide>
+            <div class="text-content">
+                <h3>{{swiperObj.title}}</h3>
+                <p *ngIf="swiperObj.firstContent">{{swiperObj.firstContent}}</p>
+                <div class="number-section">
+                    <div *ngFor="let numberContent of swiperObj?.numberContent">
+                        <p>{{numberContent}}</p>
+                    </div>
+                </div>
+                <div class="letter-section">
+                    <div *ngFor="let letterContent of swiperObj?.letterContent">
+                        <p>{{letterContent}}</p>
+                    </div>
+                </div>
+            </div>
+        </ng-template>
+    </swiper>
+
+</div>

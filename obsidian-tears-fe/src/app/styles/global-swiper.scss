@@ -9,9 +9,9 @@
     width: 100%;
     background-color: $primary-blue-muted-color;
 
-    // @media screen and (max-width: $lt-sm) {
-    //     height: 375px;
-    // }
+    @media screen and (max-width: $lt-sm) {
+        height: 375px;
+    }
 }
 
 .swiper-slide img {
